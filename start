@@ -1,0 +1,15 @@
+#!/bin/sh
+
+: ${COLOR:=lightgreen}
+: ${TITLE:=welcome to ndzsinx}
+
+cat > /usr/share/nginx/html/index.html <<EOF
+<htlm>
+<body bgcolor="$COLOR">
+<h1>$TITLE</h1>
+$BODY
+
+</html>
+EOF
+
+nginx
